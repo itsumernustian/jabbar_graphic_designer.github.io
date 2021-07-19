@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel = "icon" href="jabbar.jpg">
+        <title>Eclectic Designs - Discover the World’s Top Logo's </title>
+  <style type="text/css">
+    @media (min-width: 1023px) {
+    #menu-items {
+       display: inline-flex !important;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+
+    <nav class="fixed w-full bg-gray-700 flex items-center p-2 flex-wrap ">
+      <a href="#" class="inline-flex items-center p-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-aperture text-white" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="12" cy="12" r="9" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)" />
+        </svg>
+        <span class="text-white text-extrabold text-2xl pl-2 uppercase tracking-wide">Eclectic Designs</span>
+      </a>
+      <button id="nav-toggler" class="lg:hidden  inline-flex ml-auto hover:bg-gray-800 rounded p-3 outline-none focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-white icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+      </button>
+      <div id="menu-items" class="hidden ml-auto lg:inline-flex lg:w-auto w-full text-center">
+        <div class="ml-auto text-white px-3 lg:inline-flex lg:flex-row lg:items-center lg:w-auto w-full flex flex-col ">
+          <a class="px-2 py-2 lg:w-auto w-full rounded font-normal text-lg hover:text-gray-200 hover:bg-gray-900" href="#home">Home</a>
+          <a class="px-2 py-2 lg:w-auto w-full font-normal text-lg hover:text-gray-200 hover:bg-gray-900 rounded" href="#gallery">Products</a>
+          <a class="px-2 py-2 hover:text-gray-200 font-normal text-lg hover:bg-gray-900 rounded" href="#services">Services</a>
+          <a class="px-2 py-2 lg:w-auto w-full font-normal text-lg hover:text-gray-200 hover:bg-gray-900 rounded" href="#about-me">About</a>
+          <a class="px-2 py-2 lg:w-auto w-full font-normal text-lg hover:text-gray-200 hover:bg-gray-900 rounded" href="#contact-me">Contact me</a>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div class="sliderAx h-auto" id="home">
+      <div id="slider-1" class=" pt-20">
+        <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80)">
+         <div class="md:w-1/2">
+            <p class="font-bold text-sm uppercase">Logo designer</p>
+            <p class="text-3xl font-bold">Hello Customers</p>
+            <p class="text-2xl mb-10 leading-none">To know about the services...</p>
+            <a href="#contact-me" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact me</a>
+          </div>  
+          </div> <!-- container -->
+      <br>
+       </div>
+
+      <div id="slider-2" class="pt-20" >
+        <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+       
+        <p class="font-bold text-sm uppercase">Logo designer</p>
+            <p class="text-3xl font-bold">Hello Customers</p>
+            <p class="text-2xl mb-10 leading-none">To know about the services...</p>
+            <a href="#contact-me" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact me</a>
+             
+    </div> <!-- container -->
+          <br>
+     </div>
+          </div>
+       <div  class="flex justify-between w-12 mx-auto pb-2">
+              <button id="sButton1" onclick="sliderButton1()" class="bg-gray-400 outline-none rounded-full w-4 pb-2 " ></button>
+          <button id="sButton2" onclick="sliderButton2() " class="bg-gray-400 outline-none rounded-full w-4 p-2"></button>
+        </div>
+
+
+
+
+  <!-- <section class="flex flex-wrap sm:flex-row flex-col m-auto container" id="gallery">
+    <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-auto m-auto sm:m-0 p-5">
+      <img class="object-cover rounded-full border-2 border-indigo-500" width="300" height="300" src="crimes.jpg">
+      <p class="text-center">Best logo in the world</p>
+    </div>
+    <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-auto m-auto sm:m-0 p-5">
+      <img class="object-cover rounded-full border-2 border-indigo-500" width="300" height="300" src="crimes.jpg">
+      <p class="text-center">Best logo in the world</p>
+    </div>
+    <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-auto m-auto sm:m-0 p-5">
+      <img class="object-cover rounded-full border-2 border-indigo-500" width="300" height="300" src="crimes.jpg">
+      <p class="text-center">Best logo in the world</p>
+    </div>
+    <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-auto m-auto sm:m-0 p-5">
+      <img class="object-cover rounded-full border-2 border-indigo-500" width="300" height="300" src="crimes.jpg">
+      <p class="text-center">Best logo in the world</p>
+    </div>
+  </section> -->
+<!-- component -->
+<div class="text-center my-10">
+  <h1 class="text-3xl text-medium">
+    PRODUCTS
+  </h1>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mx-5" id="gallery">
+
+      <div class="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
+        <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+             alt=""
+             class="h-full w-full">
+        </div>
+
+        <h2 class="mt-4 font-bold text-xl">Sebastian Bennett</h2>
+        <h6 class="mt-2 text-sm font-medium">Founder</h6>
+
+        <p class="text-xs text-gray-500 text-center mt-3 pb-10">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab enim molestiae nulla.
+        </p>
+
+        
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
+        <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+             alt=""
+             class="h-full w-full">
+        </div>
+
+        <h2 class="mt-4 font-bold text-xl">Sebastian Bennett</h2>
+        <h6 class="mt-2 text-sm font-medium">Founder</h6>
+
+        <p class="text-xs text-gray-500 text-center mt-3 pb-10">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab enim molestiae nulla.
+        </p>
+
+        
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
+        <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+             alt=""
+             class="h-full w-full">
+        </div>
+
+        <h2 class="mt-4 font-bold text-xl">Sebastian Bennett</h2>
+        <h6 class="mt-2 text-sm font-medium">Founder</h6>
+
+        <p class="text-xs text-gray-500 text-center mt-3 pb-10">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab enim molestiae nulla.
+        </p>
+
+        
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
+        <div class="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+             alt=""
+             class="h-full w-full">
+        </div>
+
+        <h2 class="mt-4 font-bold text-xl">Sebastian Bennett</h2>
+        <h6 class="mt-2 text-sm font-medium">Founder</h6>
+
+        <p class="text-xs text-gray-500 text-center mt-3 pb-10">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab enim molestiae nulla.
+        </p>
+
+        
+      </div>
+
+    </div>
+
+  
+<div class="text-center my-10">
+  <h1 class="text-3xl text-medium">
+    ABOUT ME
+  </h1>
+</div>
+    <section class="mx-10 m-auto" id="about-me">
+    <div class="w-full m-auto  py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+      <div class="flex justify-center md:justify-end -mt-16">
+        <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src="jabbar.jpg">
+      </div>
+      <div>
+        <h2 class="text-gray-800 text-3xl font-semibold">Graphic Designer</h2>
+        <p class="mt-2 text-gray-600">
+          Hello! I am Jabbar Hussain and I have always been passionate about logo designing, having user-friendly designs. I have used many different technologies for graphic designing and I am especially interested in logo designings.
+        </p>
+      </div>
+      <div class="flex justify-end mt-4">
+        <a href="#" class="text-xl font-medium text-indigo-500">Jabbar Hussain</a>
+      </div>
+    </div>
+  </section>
+  <div class="text-center my-10">
+  <h1 class="text-3xl text-medium">
+    SERVICES & CONTACT ME
+  </h1>
+</div>
+  <footer class="bg-gray-800">
+    <section class="bg-gray-600">
+      <article class="lg:h-48 container flex flex-wrap flex-col text-center m-auto w-full lg:w-auto items-center  lg:flex-row ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-10 my-2 icon icon-tabler icon-tabler-aperture text-white" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="12" cy="12" r="9" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)" />
+          <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)" />
+        </svg>
+        <h1 class=" text-white font-medium px-4 text-2xl lg:w-3/5 w-full lg:pb-0 pb-3">`LOGO Design Artist` Website that provide you a platform for ordering a logo.</h1>
+        <button class=" mb-3 mx-12 rounded outline-none ring bg-gray-500 text-white 
+        w-40 h-10 hover:bg-gray-700 ">
+          Learn More
+        </button>
+      </article>
+    </section>
+    <section class="container m-auto pb-3" id="services">
+      <h1 class="text-white text-extrabold text-3xl pl-2 uppercase tracking-wide py-4 sm:text-left text-center">Eclectic Designs</h1>
+      <article class="lg:flex lg:flex-row justify-between flex flex-wrap">
+        <div class="text-white text-center leading-loose sm:w-auto w-full">
+          <ul>
+            <li class="uppercase font-bold pl-2">`Graphic Designer`</li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#">Press Center</a></li>
+            <li><a href="#">Careers</a></li>
+
+          </ul>
+        </div>
+
+        <div class="text-white text-center leading-loose sm:w-auto w-full">
+          <ul>
+            <li class="uppercase font-bold">`Customer Service`</li>
+            <li><a href="#">Order a Logo</a></li>
+            <li><a href="gallery">Products</a></li>
+            <!-- <li><a href="#">Store Locator</a></li> -->
+
+          </ul>
+        </div>
+        <div class="text-white text-center leading-loose sm:w-auto w-full">
+          <ul>
+            <li class="uppercase font-bold">`Resources`</li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+
+          </ul>
+        </div>
+      </article>
+      
+    </section>
+    <hr/>
+    <section class="container m-auto " id="contact-me">
+      <h1 class="text-white text-extrabold text-xl pl-2 uppercase tracking-wide pt-4 text-center">
+        Contact Me
+      </h1>
+      <h1 class="text-white text-extrabold text-md pl-2 uppercase tracking-wide py-1 text-center">Social Links</h1>
+      <p class="text-white text-center w-4/5 m-auto my-2 pb-2">
+        My inbox is always open. In case of any queries you can drop me a message at any of the links below. I will try to respond as soon as possible.
+      </p>
+      <article class="flex flex-row justify-between pb-5 w-full my-2 sm:w-3/5 m-auto">
+        <a href="https://web.facebook.com/profile.php?id=100009548744507" target="_blank" class="pl-2 pr-5 bg-blue-700  h-12 w-12 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 text-white icon icon-tabler icon-tabler-brand-facebook " width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/jabbar725/" target="_blank" class=" pl-2 pr-5 bg-blue-700  h-12 w-12 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mt-2 icon icon-tabler icon-tabler-brand-instagram text-white " width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg>
+        </a>
+        <a href="#" class="pl-2 pr-5 bg-blue-700  h-12 w-12 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mt-2 text-white icon icon-tabler icon-tabler-mail" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+        </a>
+        <a href="#" class="pl-2 pr-5 bg-blue-700  h-12 w-12 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mt-2 icon icon-tabler text-white icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+          </svg>
+        </a>
+      </article>
+    </section>
+    <section class="container m-auto pb-6">
+      <p class="text-center text-white">Designed and Developed by Muhammad Umer Farooq</p>
+    </section>
+  </footer>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $("#nav-toggler").click(function(){
+      $("#menu-items").toggle();
+      });
+    });
+    </script>
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script>
+    var cont=0;
+function loopSlider(){
+  var xx= setInterval(function(){
+        switch(cont)
+        {
+        case 0:{
+            $("#slider-1").fadeOut(400);
+            $("#slider-2").delay(400).fadeIn(400);
+            $("#sButton1").removeClass("bg-purple-800");
+            $("#sButton2").addClass("bg-purple-800");
+        cont=1;
+        
+        break;
+        }
+        case 1:
+        {
+        
+            $("#slider-2").fadeOut(400);
+            $("#slider-1").delay(400).fadeIn(400);
+            $("#sButton2").removeClass("bg-purple-800");
+            $("#sButton1").addClass("bg-purple-800");
+           
+        cont=0;
+        
+        break;
+        }
+        
+        
+        }},8000);
+
+}
+
+function reinitLoop(time){
+clearInterval(xx);
+setTimeout(loopSlider(),time);
+}
+
+
+
+function sliderButton1(){
+
+    $("#slider-2").fadeOut(400);
+    $("#slider-1").delay(400).fadeIn(400);
+    $("#sButton2").removeClass("bg-purple-800");
+    $("#sButton1").addClass("bg-purple-800");
+    reinitLoop(4000);
+    cont=0
+    
+    }
+    
+    function sliderButton2(){
+    $("#slider-1").fadeOut(400);
+    $("#slider-2").delay(400).fadeIn(400);
+    $("#sButton1").removeClass("bg-purple-800");
+    $("#sButton2").addClass("bg-purple-800");
+    reinitLoop(4000);
+    cont=1
+    
+    }
+
+    $(window).ready(function(){
+        $("#slider-2").hide();
+        $("#sButton1").addClass("bg-purple-800");
+        
+
+        loopSlider();
+     
+        
+    
+    
+    
+    
+    });
+
+  
+  </script>
+  
+</body>
+</html>
